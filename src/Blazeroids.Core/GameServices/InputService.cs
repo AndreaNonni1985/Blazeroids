@@ -7,12 +7,12 @@ using Blazorex;
 
 namespace Blazeroids.Core.GameServices
 {
-    public enum MouseButtons
-    {
-        Left = 0,
-        Middle = 1,
-        Right = 2
-    }
+    //public enum MouseButtons
+    //{
+    //    Left = 0,
+    //    Middle = 1,
+    //    Right = 2
+    //}
 
     public struct ButtonState
     {

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Blazeroids.Core.Components.AnimatedSpriteRenderComponent">
+    <Position X="4" Y="3.5" Width="4.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Blazeroids.Core.Components.AnimatedSpriteRenderComponent.OnAnimationCompleteHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\AnimatedSpriteRenderComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIBAABgQAAEQAAgACAEAAAABACAAgEAAA=</HashCode>
+      <FileName>Components\AnimatedSpriteRenderComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Blazeroids.Core.Components.AnimationController">
+    <Position X="8.5" Y="3.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AECAAAgAACAAAgAAABQAAAAAIAAgAEAAAAACAAgACBA=</HashCode>
+      <FileName>Components\AnimationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Blazeroids.Core.Components.BoundingBoxComponent">
+    <Position X="25" Y="3.5" Width="4.25" />
+    <NestedTypes>
+      <Delegate Name="Blazeroids.Core.Components.BoundingBoxComponent.OnPositionChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\BoundingBoxComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="Blazeroids.Core.Components.BoundingBoxComponent.OnCollisionHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\BoundingBoxComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAQAIAAAAAAAAAAAAIDACAggAAgA=</HashCode>
+      <FileName>Components\BoundingBoxComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Blazeroids.Core.Components.Component">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAEACAACAAAAAAAAAAAAAAAAAAAAAAAAACAAgAAAA=</HashCode>
+      <FileName>Components\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Blazeroids.Core.Components.LambdaComponent">
+    <Position X="20.75" Y="3.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAA=</HashCode>
+      <FileName>Components\LambdaComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Blazeroids.Core.Components.RectRenderComponent">
+    <Position X="12.75" Y="3.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAACAEAAQABACAAAEAgA=</HashCode>
+      <FileName>Components\RectRenderComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Blazeroids.Core.Components.SpriteRenderComponent">
+    <Position X="29.5" Y="3.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAEAAQABACAAAEAAA=</HashCode>
+      <FileName>Components\SpriteRenderComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Blazeroids.Core.Components.TransformComponent">
+    <Position X="17.25" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAABAAAAAAAAAAAAAAAABAAAAAAAAAAAgAAEA=</HashCode>
+      <FileName>Components\TransformComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Blazeroids.Core.IRenderable">
+    <Position X="9.5" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAEAAA=</HashCode>
+      <FileName>IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

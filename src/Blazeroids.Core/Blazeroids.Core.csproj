@@ -1,12 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+	  <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>   
-    <PackageReference Include="Blazorex" Version="0.0.5" />   
     <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Blazorex\src\Blazorex\Blazorex.csproj" />
   </ItemGroup>
 
 </Project>

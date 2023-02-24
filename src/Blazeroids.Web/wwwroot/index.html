@@ -58,6 +58,8 @@
             game.instance.invokeMethodAsync('OnResize', window.innerWidth, window.innerHeight);
         }
 
+        //Questa funzione viene richiamata da : SoundService.Play(stringa nome,boolean loop)
+        //usa un array di elementi "audio" già pre-caricato nella funzione 'initGame'
         window.playSound = function (name, loop) {
             const audio = window.game.sounds[name];
             if (!audio) return;

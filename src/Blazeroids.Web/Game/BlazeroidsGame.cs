@@ -63,6 +63,12 @@ namespace Blazeroids.Web.Game
                 OnMouseMove = (coords) =>
                 {
                     _inputService?.Mouse.SetPosition(coords);
+                },
+                OnMouseDown = (button) => {
+                    _inputService?.Mouse.SetButtonState(button,ButtonState.States.Down);
+                },
+                OnMouseUp = (button) => {
+                    _inputService?.Mouse.SetButtonState(button,ButtonState.States.Up);
                 }
             };
 
