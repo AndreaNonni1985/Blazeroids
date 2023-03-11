@@ -94,7 +94,7 @@ namespace Blazeroids.Web.Game.Scenes
 
                 var bulletBBox = bullet.Components.Add<BoundingBoxComponent>();
                 bulletBBox.SetSize(bulletSpriteRenderer.Sprite.Bounds.Size);
-
+                bulletBBox.LayerIndex = (int)RenderLayers.UI;
                 var speed = 7000f;
 
                 var bulletRigidBody = bullet.Components.Add<MovingBody>();

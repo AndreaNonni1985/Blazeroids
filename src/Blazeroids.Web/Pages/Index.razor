@@ -10,12 +10,12 @@
 @inject IAssetsResolver AssetsResolver
 
 <Assets Source="assets/assets.json" OnLoaded="@OnAssetsLoaded" />
-
+<CanvasManager @ref="_canvasManager" OnCanvasAdded="@OnCanvasAdded" />
 @if(!_assetsLoaded){
     <div class="preloading"><span>Loading assets...</span></div>
 }
 
-<CanvasManager @ref="_canvasManager" OnCanvasAdded="@OnCanvasAdded" />
+
 
 @code
 {
@@ -25,6 +25,9 @@
     bool _assetsLoaded = false;
     bool _initialized = false;
 
+	//viene invocato dal componente Assets
+	//-------------------------------------------------------------------------------
+	//solo la prima volta chiama InitGame
     private async Task OnAssetsLoaded()
     {
         _assetsLoaded = true;
@@ -34,11 +37,23 @@
         }
     }
 
+	//viene richiamato dal componente Blazorex.CanvasManager al termine dell'inizializzazione
+	//-------------------------------------------------------------------------------
+	//invoca index.html.onResize()
     private async Task OnCanvasAdded()
     {
         await JsRuntime.InvokeAsync<object>("onResize");
     }
 
+	//viene richiemato da OnAssetsLoaded()
+	//----------------------------------------
+	//invoca index.html.initGame(instance) passando l'istanza del componente corrente
+	//istanzia l'oggetto SoundService
+	//istanzia l'oggetto BlazeroidsGame passando 
+	//	l'oggetto del componente blazorex.canvasManager
+	//	l'assetresolver (iniettato) 
+	//	ed il soundService appena creato.
+	//chiama il metodo BlazeroidsGame.InitAsync()
     private async ValueTask InitGame()
     {
         var instance = DotNetObjectReference.Create(this);
@@ -49,6 +64,9 @@
         await _game.InitAsync();
     }
 
+	//viene invocato da Index.html.OnResize()
+	//--------------------------------------------------------------
+	//setta la proprietà Size dell'oggetto BlazeroidsGame.Display
     [JSInvokable]
     public void OnResize(int screenWidth, int screenHeight)
     {

@@ -20,7 +20,6 @@ namespace Blazeroids.Web.Game
                               ISoundService soundService) : base(canvasManager)
         {
             _assetsResolver = assetsResolver;
-
             this.AddService(soundService);
         }
 

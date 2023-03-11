@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Blazeroids.Core.Components
 {
-    public class BoundingBoxComponent : Component
+    public class BoundingBoxComponent : Component    , IRenderable
 #if DEBUG
     //    , IRenderable
 #endif
@@ -23,6 +23,9 @@ namespace Blazeroids.Core.Components
         }
 
         public Rectangle Bounds => _bounds;
+
+        public int LayerIndex { get ; set ; }
+        public bool Hidden { get ; set ; }
 
         public void SetSize(Size size)
         {

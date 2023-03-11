@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Blazeroids.Core.Components.AnimatedSpriteRenderComponent">
+<<<<<<< HEAD
+    <Position X="0.5" Y="4" Width="4.25" />
+=======
     <Position X="4" Y="3.5" Width="4.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -19,14 +23,22 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Blazeroids.Core.Components.AnimationController">
+<<<<<<< HEAD
+    <Position X="5.5" Y="4" Width="4" />
+=======
     <Position X="8.5" Y="3.5" Width="4" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AECAAAgAACAAAgAAABQAAAAAIAAgAEAAAAACAAgACBA=</HashCode>
       <FileName>Components\AnimationController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Blazeroids.Core.Components.BoundingBoxComponent">
+<<<<<<< HEAD
+    <Position X="24" Y="4" Width="4.25" />
+=======
     <Position X="25" Y="3.5" Width="4.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <NestedTypes>
       <Delegate Name="Blazeroids.Core.Components.BoundingBoxComponent.OnPositionChangedHandler" Collapsed="true">
         <TypeIdentifier>
@@ -40,26 +52,44 @@
       </Delegate>
     </NestedTypes>
     <TypeIdentifier>
+<<<<<<< HEAD
+      <HashCode>AAAAAAAAAAAAAIAAAQAIAAAAAAAAEAAAIDACAggEAgA=</HashCode>
+      <FileName>Components\BoundingBoxComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Blazeroids.Core.Components.Component">
+    <Position X="15.25" Y="0.5" Width="3.25" />
+=======
       <HashCode>AAAAAAAAAAAAAIAAAQAIAAAAAAAAAAAAIDACAggAAgA=</HashCode>
       <FileName>Components\BoundingBoxComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Blazeroids.Core.Components.Component">
     <Position X="0.5" Y="0.5" Width="3.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AAQAEACAACAAAAAAAAAAAAAAAAAAAAAAAAACAAgAAAA=</HashCode>
       <FileName>Components\Component.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Blazeroids.Core.Components.LambdaComponent">
+<<<<<<< HEAD
+    <Position X="19.25" Y="4" Width="4" />
+=======
     <Position X="20.75" Y="3.5" Width="4" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAA=</HashCode>
       <FileName>Components\LambdaComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Blazeroids.Core.Components.RectRenderComponent">
+<<<<<<< HEAD
+    <Position X="10.25" Y="4" Width="4.25" />
+=======
     <Position X="12.75" Y="3.5" Width="4.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAACAEAAQABACAAAEAgA=</HashCode>
       <FileName>Components\RectRenderComponent.cs</FileName>
@@ -67,7 +97,11 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Blazeroids.Core.Components.SpriteRenderComponent">
+<<<<<<< HEAD
+    <Position X="29" Y="4" Width="4.25" />
+=======
     <Position X="29.5" Y="3.5" Width="4.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAEAAQABACAAAEAAA=</HashCode>
       <FileName>Components\SpriteRenderComponent.cs</FileName>
@@ -75,14 +109,23 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Blazeroids.Core.Components.TransformComponent">
+<<<<<<< HEAD
+    <Position X="15.25" Y="4" Width="3.25" />
+=======
     <Position X="17.25" Y="3.5" Width="3.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AgAAAAAAABAAAAAAAAAAAAAAAABAAAAAAAAAAAgAAEA=</HashCode>
       <FileName>Components\TransformComponent.cs</FileName>
     </TypeIdentifier>
   </Class>
+<<<<<<< HEAD
+  <Interface Name="Blazeroids.Core.IRenderable" Collapsed="true">
+    <Position X="34.25" Y="0.5" Width="1.5" />
+=======
   <Interface Name="Blazeroids.Core.IRenderable">
     <Position X="9.5" Y="0.5" Width="4.25" />
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAEAAA=</HashCode>
       <FileName>IRenderable.cs</FileName>

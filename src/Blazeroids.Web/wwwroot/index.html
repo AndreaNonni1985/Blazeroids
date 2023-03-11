@@ -48,6 +48,11 @@
     <script src="_framework/blazor.webassembly.js"></script>
     
     <script>
+        //è un ascoltatore dell'evento "resize" che viene registrato in index.html.initGame(instance)
+        //viene anche invocato da index.razor.onCanvasAdded
+        //--------------------------------------------------------------------------------------------
+        //recupera gli elementi canvas e per ogniuno imposta width e height come quelli della finestra
+        //dopo di che chiama il metodo Index.Razor.OnResize passando le nuove dimensioni
         window.onResize = function () {
             const canvases = [...document.getElementsByTagName('canvas') || []];
             canvases.forEach(c => {
@@ -59,7 +64,13 @@
         }
 
         //Questa funzione viene richiamata da : SoundService.Play(stringa nome,boolean loop)
+<<<<<<< HEAD
+        //--------------------------------------------------------------------------------------------
         //usa un array di elementi "audio" già pre-caricato nella funzione 'initGame'
+        //esegue play sul tag element ricavato dal parametro "nome"
+=======
+        //usa un array di elementi "audio" già pre-caricato nella funzione 'initGame'
+>>>>>>> 80dd7ee (MouseClick su Blazorex)
         window.playSound = function (name, loop) {
             const audio = window.game.sounds[name];
             if (!audio) return;
@@ -67,6 +78,11 @@
             audio.play();
         }
 
+        //Questa funzione viene richiamata da : Index.Razor.InitGame()
+        //che a sua volta viene richiamato dall'evento OnAssetsLoaded del controllo Asset.razor
+        //--------------------------------------------------------------------------------------------
+        //crea una lista interna alla pagina dove registra gli elementi di tag "audio"
+        //registra l'evento onResize al ridimensionamento pagina
         window.initGame = (instance) => {
             const loadSounds = () => {
                 const sounds = [...document.getElementsByTagName("audio") || []],
